@@ -42,9 +42,11 @@ To find out when the contents of a file were last changed, the time, date and pa
 
 8. Creation Time File:
 
+When files are created, the file management system signs the time and date of creation. This information is provided here.
+
+
 _______________________________________________________________________________________________________________
 
-When files are created, the file management system signs the time and date of creation. This information is provided here.
 
 File monitoring involves tracking changes to files or directories on a system. This can be used to monitor file activity, detect unauthorized modifications, or track file creation, deletion, and modification times. 
 Here's a breakdown of key aspects:
