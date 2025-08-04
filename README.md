@@ -1,5 +1,13 @@
 # Directory-Sniffer:
 
+```
+Compiler    : Delphi10 Seattle, 10.1 Berlin, 10.2 Tokyo, 10.3 Rio, 10.4 Sydney, 11 Alexandria, 12 Athens
+Components  : None
+Discription : Surveillance your Harddisk
+Last Update : 08/2025
+License     : Freeware
+```
+
 Monitoring folders or entire partitions is a useful way to know what programs are doing on your hard drive.
 
 This program allows you to track and analyze the activities of your programs. You can monitor individual folders or entire partitions. Monitoring can also be set up specifically if only conditional information is required.
