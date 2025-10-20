@@ -17,10 +17,11 @@ This program allows you to track and analyze the activities of your programs. Yo
 
 When installing large programs, the setup creates many files in the system. In order to find these files, the sniffer can monitor the setup.
 
+</br>
 
 ![DirSniffer](https://github.com/user-attachments/assets/b6dc1a2c-d09c-4e03-bcd4-acc9502703f4)
 
-
+</br>
 
 # Monitoring categories:
 ### 1. Add File:
