@@ -38,7 +38,7 @@ When installing large programs, the setup creates many files in the system. In o
 </br>
 _______________________________________________________________________________________________________________
 
-</br>
+#
 
 File monitoring involves tracking changes to files or directories on a system. This can be used to monitor file activity, detect unauthorized modifications, or track file creation, deletion, and modification times. 
 Here's a breakdown of key aspects:
