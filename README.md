@@ -22,38 +22,6 @@ When installing large programs, the setup creates many files in the system. In o
 
 </br>
 
-# Monitoring categories:
-### 1. Add File:
-
-Used to find out which files your program or setup has created.
-
-### 2. Remove File:
-
-Monitor which files your program has removed.
-
-### 3. Renamed File:
-
-Find out which files your program has renamed. A report will be provided, converting the original file into the renamed file.
-
-### 4. Renamed Directory:
-
-Find out which folders your program has renamed. A report will be provided showing the original folders and the renamed folders.
-
-### 5. Modification File:
-
-Programs also modify the contents of a file as soon as they have access rights. The path to the file whose contents were modified is provided here.
-
-### 6. Last Access:
-
-To find out when a file was last accessed, the time, date and path are provided here.
-
-### 7. Last Write File:
-
-To find out when the contents of a file were last changed, the time, date and path are provided here.
-
-### 8. Creation Time File:
-
-When files are created, the file management system signs the time and date of creation. This information is provided here.
 
 
 | Categories             | Description |
@@ -67,9 +35,10 @@ When files are created, the file management system signs the time and date of cr
 | Last Write File     | To find out when the contents of a file were last changed, the time, date and path are provided here.     |
 | Creation Time File     | When files are created, the file management system signs the time and date of creation. This information is provided here.     |
 
-
+</br>
 _______________________________________________________________________________________________________________
 
+</br>
 
 File monitoring involves tracking changes to files or directories on a system. This can be used to monitor file activity, detect unauthorized modifications, or track file creation, deletion, and modification times. 
 Here's a breakdown of key aspects:
