@@ -91,3 +91,16 @@ SET "PROCESSED_DIR=C:\Path\To\Processed"
     TIMEOUT /T 5 /NOBREAK >NUL
 GOTO LOOP
 ```
+
+</br>
+
+### Batch Concepts for Monitoring
+
+* ```@ECHO OFF``` : Hides command output for cleaner logs.  
+* ```SETLOCAL ENABLEDELAYEDEXPANSION``` : Allows variables like !count! to update within loops.  
+* ```FOR %%F IN (C:\Path\*.*) DO (...) : Iterates through files matching the pattern.  
+* ```TIMEOUT /T <seconds>``` : Pauses execution for a set time.  
+* ```ERRORLEVEL``` : Check ERRORLEVEL (0 for success, 1+ for errors) after commands to see if they worked.  
+* ```MOVE / COPY``` : Actions to take on processed files.  
+
+
