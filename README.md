@@ -108,7 +108,7 @@ GOTO LOOP
 # Basic cpp Monitoring
 Directory monitoring in C++ is platform-specific, as the standard library (even ```std::filesystem``` in C++17/20) does not provide native event-based directory watching. For 2026, the recommended approaches are using OS-specific APIs or modern cross-platform libraries. 
 
-* Windows: ```ReadDirectoryChangesW ```* The primary way to monitor a directory on Windows is through the Win32 ReadDirectoryChangesW API. It provides detailed notifications for file creation, deletion, renaming, and modification.
+* Windows: ```ReadDirectoryChangesW*``` The primary way to monitor a directory on Windows is through the Win32 ReadDirectoryChangesW API. It provides detailed notifications for file creation, deletion, renaming, and modification.
 
 ```cpp
 #include <windows.h>
