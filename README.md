@@ -20,7 +20,7 @@ When installing large programs, the setup creates many files in the system. In o
 
 </br>
 
-![DirSniffer](https://github.com/user-attachments/assets/b6dc1a2c-d09c-4e03-bcd4-acc9502703f4)
+![DirectorySniffer](https://github.com/user-attachments/assets/f488ee2b-9b93-428f-a27f-be0a9e01e31c)
 
 </br>
 
