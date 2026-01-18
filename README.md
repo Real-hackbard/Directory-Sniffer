@@ -98,7 +98,7 @@ GOTO LOOP
 
 * ```@ECHO OFF``` : Hides command output for cleaner logs.  
 * ```SETLOCAL ENABLEDELAYEDEXPANSION``` : Allows variables like !count! to update within loops.  
-* ```FOR %%F IN (C:\Path\*.*) DO (...) : Iterates through files matching the pattern.  
+* ```FOR %%F IN (C:\Path\*.*) DO (...)``` : Iterates through files matching the pattern.  
 * ```TIMEOUT /T <seconds>``` : Pauses execution for a set time.  
 * ```ERRORLEVEL``` : Check ERRORLEVEL (0 for success, 1+ for errors) after commands to see if they worked.  
 * ```MOVE / COPY``` : Actions to take on processed files.  
