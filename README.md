@@ -66,3 +66,28 @@ Monitoring log files: Ensuring they are regularly rotated and not excessively la
 Tracking configuration file changes: Notifying administrators of unauthorized modifications. 
 Verifying the presence of backup files: Alerting if backups haven't been created as scheduled. 
 Monitoring for unauthorized file uploads: Detecting potentially malicious files being added to a system.
+
+</br>
+
+# Basic Batch Monitoring (Looping)
+
+```batch
+@ECHO OFF
+SETLOCAL ENABLEDELAYEDEXPANSION
+
+SET "MONITOR_DIR=C:\Path\To\Monitor"
+SET "PROCESSED_DIR=C:\Path\To\Processed"
+
+:LOOP
+    REM Check for new files
+    FOR %%F IN ("%MONITOR_DIR%\*.txt") DO (
+        ECHO Found new file: %%F
+        REM --- Your processing command here ---
+        REM Example: Copy to a processed folder
+        MOVE "%%F" "%PROCESSED_DIR%"
+        REM --- End of processing ---
+    )
+    REM Wait for 5 seconds before checking again
+    TIMEOUT /T 5 /NOBREAK >NUL
+GOTO LOOP
+```
