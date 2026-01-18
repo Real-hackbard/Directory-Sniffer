@@ -131,3 +131,26 @@ void WatchDirectory(LPCWSTR path) {
 }
 ```
 
+</br>
+
+# Basic cpp Monitoring Linux
+On Linux, the inotify API is the standard for monitoring file system events. Note that ```inotify``` is not recursive by default; you must add a watch for every subdirectory manually if needed.
+
+```cpp
+#include <sys/inotify.h>
+#include <unistd.h>
+#include <iostream>
+
+void MonitorLinux(const char* path) {
+    int fd = inotify_init();
+    int wd = inotify_add_watch(fd, path, IN_MODIFY | IN_CREATE | IN_DELETE);
+    
+    char buffer[4096];
+    while (true) {
+        int length = read(fd, buffer, sizeof(buffer));
+        struct inotify_event* event = (struct inotify_event*)buffer;
+        if (event->mask & IN_CREATE) std::cout << "Created: " << event->name << std::endl;
+        // ... handle other events
+    }
+}
+```
