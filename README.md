@@ -56,6 +56,18 @@ To find out when the contents of a file were last changed, the time, date and pa
 When files are created, the file management system signs the time and date of creation. This information is provided here.
 
 
+| Categories | Description |
+| :-----------: | :-----------: |
+| Add File     | Used to find out which files your program or setup has created.     |
+| Remove File     | Monitor which files your program has removed.     |
+| Zelle 2,1     | Zelle 2,2     |
+| Zelle 2,1     | Zelle 2,2     |
+| Zelle 2,1     | Zelle 2,2     |
+| Zelle 2,1     | Zelle 2,2     |
+| Zelle 2,1     | Zelle 2,2     |
+| Zelle 2,1     | Zelle 2,2     |
+
+
 _______________________________________________________________________________________________________________
 
 
