@@ -36,7 +36,6 @@ When installing large programs, the setup creates many files in the system. In o
 | Creation Time File     | When files are created, the file management system signs the time and date of creation. This information is provided here.     |
 
 </br>
-_______________________________________________________________________________________________________________
 
 #
 
