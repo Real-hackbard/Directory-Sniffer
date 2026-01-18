@@ -103,4 +103,31 @@ GOTO LOOP
 * ```ERRORLEVEL``` : Check ERRORLEVEL (0 for success, 1+ for errors) after commands to see if they worked.  
 * ```MOVE / COPY``` : Actions to take on processed files.  
 
+</br>
+
+# Basic cpp Monitoring
+Directory monitoring in C++ is platform-specific, as the standard library (even ```std::filesystem``` in C++17/20) does not provide native event-based directory watching. For 2026, the recommended approaches are using OS-specific APIs or modern cross-platform libraries. 
+
+* Windows: ```ReadDirectoryChangesW ```* The primary way to monitor a directory on Windows is through the Win32 ReadDirectoryChangesW API. It provides detailed notifications for file creation, deletion, renaming, and modification.
+
+```cpp
+#include <windows.h>
+#include <iostream>
+
+void WatchDirectory(LPCWSTR path) {
+    HANDLE hDir = CreateFileW(path, FILE_LIST_DIRECTORY, 
+        FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE, 
+        NULL, OPEN_EXISTING, FILE_FLAG_BACKUP_SEMANTICS, NULL);
+
+    BYTE buffer[1024];
+    DWORD bytesReturned;
+    while (ReadDirectoryChangesW(hDir, buffer, sizeof(buffer), TRUE, 
+           FILE_NOTIFY_CHANGE_FILE_NAME | FILE_NOTIFY_CHANGE_LAST_WRITE, 
+           &bytesReturned, NULL, NULL)) {
+        FILE_NOTIFY_INFORMATION* pNotify = (FILE_NOTIFY_INFORMATION*)buffer;
+        std::wcout << L"Change detected in: " << pNotify->FileName << std::endl;
+        // Handle next entry in buffer if multiple changes occur
+    }
+}
+```
 
