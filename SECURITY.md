@@ -9,6 +9,7 @@ currently being supported with security updates.
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
 | 1.1.x   | :white_check_mark: Update : Colored Items, Search Items, Add Colors, Select Monitoring Mode |
+| 1.2.x   | :white_check_mark: Improved search function ; Disk Information; Disk Properties|
 
 ## Reporting a Vulnerability
 
