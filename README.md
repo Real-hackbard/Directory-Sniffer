@@ -28,7 +28,7 @@ When installing large programs, the setup creates many files in the system. In o
 
 </br>
 
-# Fuctiosn
+# Functions
 | Categories             | Description |
 | :--------------------: | :----------- |
 | ```Add File```     | Used to find out which files your program or setup has created.     |
